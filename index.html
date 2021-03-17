@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
+      <style>
+        .custom-btn-purple {
+          background: purple;
+          color: #ffffff;
+              display: inline-block;
+          font-weight: 400;
+          border: 1px solid transparent;
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          border-radius: .25rem;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+       .custom-btn-amber {
+          background: #fd7e14;
+          color: #ffffff;
+             display: inline-block;
+          font-weight: 400;
+         border: 1px solid transparent;
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          border-radius: .25rem;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+      </style>
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <header class="navbar text-white justify-content-center bg-dark">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="row mx-1">
+  <aside class="col-3 bg-light">
+
+    <label class= "h5" for="city-search">Search for a City:</label>
+    
+    <form id="search-form" class="input-group mb-3">
+      <input id="search-city" name="city" type="text" placeholder="Enter a City" class="form-control">
+      <button id="search-btn" class="btn btn-primary" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        </button>
+      </form>
+      
+      <article id="city-list" class="list-group">
+        <h4 class="text-secondary">Recent Searches</h4>
+        <button id="empty" class="btn btn-outline-secondary mb-4">Clear</button>
+      </article>
+    
+    </aside>
+
+<main class="col-9 my-3">
+
+<section id="current-day" class="p-3 rounded border border-2 border-gray" style="max-width: 78rem;">
+
+  <h2 id="city-name"></h2>
+  <h4 id="current-date" class="card-text"></h4>
+  <figure id="today-icon">
+    <div>
+      <sub id="today-desc"></sub>
+    </div>
+  </figure>
+  <h2 id="current-temp" class="card-text"></h2>
+  <p id="current-humidity" class="card-text"></p>
+  <div>
+    <div class="btn-group mb-2">
+      <i id="wi" style='font-size:24px' class="fas mt-1 mr-2"></i>
+      <p id="wind" class="card-text"></p>
+    </div>
+  </div>
+  
+  <div>
+    <div class="btn-group">
+      <p id="uvt" class="card-text mt-1 mr-2"></p>
+      <p id="uv" class="rounded p-1"></p>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="five-day" class="col-12 mt-3"></h3>
+  <div id="container"></div>
+</section>
+
+</main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
