@@ -1,7 +1,7 @@
 # 06 Server-Side APIs: Weather Dashboard
 ### Weather Dashboard Homework
 
-[Launch Weather Dashboard Application]()
+[Launch Weather Dashboard Application](https://pdxbellasaurus.github.io/UofO06serversideApi/)
 
 ## Overview
 This week's homework challenge was to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS using the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities.
