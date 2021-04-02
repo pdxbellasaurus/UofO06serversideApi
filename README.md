@@ -8,7 +8,7 @@ This week's homework challenge was to build a weather dashboard that will run in
 
 The following image shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./assets/06-server-side-apis-homework-demo.png)
+<img src="./assets/img/06-server-side-apis-homework-demo.png" alt="Team Page Generator Command-line app" width="600">
 
 ## Description
 Weather-Dashboard is an application to find a weather condition of a given city both the current and 5-Days forecast at the same time. The server-side API used to get response data object is retrieved from the Open Weather API. 
